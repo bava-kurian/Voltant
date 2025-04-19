@@ -12,9 +12,9 @@ import MidSection from '../components/common/SectionComponents/MidSection';
 import ProfilesSection from '../components/common/SectionComponents/ProfilesSection';
 
 // Import engineering works data
-import { engineeringWorksData } from "../utils/sectionData";
+import { largeScaleData } from "../utils/sectionData";
 
-function EngineeringWorks() {
+function LargeScale() {
   return (
     <div className="bg-white w-full min-h-screen flex flex-col items-center relative">
       {/* Navbar */}
@@ -26,15 +26,15 @@ function EngineeringWorks() {
       
       <main className="w-full">
         <HeroSection 
-          title={engineeringWorksData.hero.title}
-          breadcrumbs={engineeringWorksData.hero.breadcrumbs}
-          heroImage={engineeringWorksData.hero.heroImage}
+          title={largeScaleData.hero.title}
+          breadcrumbs={largeScaleData.hero.breadcrumbs}
+          heroImage={largeScaleData.hero.heroImage}
         />
         
         <div className='w-full flex flex-col items-center justify-center px-0 md:px-20'>
           <SeamlessChargingSection 
-            title={engineeringWorksData.seamlessCharging.title}
-            paragraphs={engineeringWorksData.seamlessCharging.paragraphs}
+            title={largeScaleData.seamlessCharging.title}
+            paragraphs={largeScaleData.seamlessCharging.paragraphs}
           />
         </div>
         
@@ -49,18 +49,18 @@ function EngineeringWorks() {
           }}
         >
           <MidSection 
-            backgroundImage={engineeringWorksData.midSection.backgroundImage}
-            sectionTitle={engineeringWorksData.midSection.sectionTitle}
-            features={engineeringWorksData.midSection.features}
+            backgroundImage={largeScaleData.midSection.backgroundImage}
+            sectionTitle={largeScaleData.midSection.sectionTitle}
+            features={largeScaleData.midSection.features}
           />
         </motion.section>
         
         <ProfilesSection 
-          sectionTitle={engineeringWorksData.profiles.sectionTitle}
-          leftProfiles={engineeringWorksData.profiles.leftProfiles}
-          rightProfiles={engineeringWorksData.profiles.rightProfiles}
-          buttonText={engineeringWorksData.profiles.buttonText}
-          showButton={engineeringWorksData.profiles.showButton}
+          sectionTitle={largeScaleData.profiles.sectionTitle}
+          leftProfiles={largeScaleData.profiles.leftProfiles}
+          rightProfiles={largeScaleData.profiles.rightProfiles}
+          buttonText={largeScaleData.profiles.buttonText}
+          showButton={largeScaleData.profiles.showButton}
         />
       </main>
       
@@ -77,4 +77,4 @@ function EngineeringWorks() {
   );
 }
 
-export default EngineeringWorks;
+export default LargeScale;

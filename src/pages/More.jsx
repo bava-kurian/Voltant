@@ -13,9 +13,9 @@ import MidSection from '../components/common/SectionComponents/MidSection';
 import ProfilesSection from '../components/common/SectionComponents/ProfilesSection';
 
 // Import data
-import { cpoData } from '../utils/sectionData';
+import { moreData } from '../utils/sectionData';
 
-const Cpo = () => {
+const More = () => {
   return (
     <>
       <Navbar />
@@ -24,15 +24,17 @@ const Cpo = () => {
       
       <div className='flex flex-col min-h-screen bg-white px-0 overflow-hidden'>
         <HeroSection 
-          title={cpoData.hero.title}
-          breadcrumbs={cpoData.hero.breadcrumbs}
-          heroImage={cpoData.hero.heroImage}
+          title={moreData.hero.title}
+          showSubtitle={moreData.hero.showSubtitle}
+          subtitle={moreData.hero.subtitle}
+          breadcrumbs={moreData.hero.breadcrumbs}
+          heroImage={moreData.hero.heroImage}
         />
         
         <div className='w-full flex flex-col items-center justify-center px-0 md:px-20'>
           <SeamlessChargingSection 
-            title={cpoData.seamlessCharging.title}
-            paragraphs={cpoData.seamlessCharging.paragraphs}
+            title={moreData.seamlessCharging.title}
+            paragraphs={moreData.seamlessCharging.paragraphs}
           />
         </div>
         
@@ -47,18 +49,18 @@ const Cpo = () => {
           }}
         >
           <MidSection 
-            backgroundImage={cpoData.midSection.backgroundImage}
-            sectionTitle={cpoData.midSection.sectionTitle}
-            features={cpoData.midSection.features}
+            backgroundImage={moreData.midSection.backgroundImage}
+            sectionTitle={moreData.midSection.sectionTitle}
+            features={moreData.midSection.features}
           />
         </motion.section>
         
         <ProfilesSection 
-          sectionTitle={cpoData.profiles.sectionTitle}
-          leftProfiles={cpoData.profiles.leftProfiles}
-          rightProfiles={cpoData.profiles.rightProfiles}
-          buttonText={cpoData.profiles.buttonText}
-          showButton={cpoData.profiles.showButton}
+          sectionTitle={moreData.profiles.sectionTitle}
+          leftProfiles={moreData.profiles.leftProfiles}
+          rightProfiles={moreData.profiles.rightProfiles}
+          buttonText={moreData.profiles.buttonText}
+          showButton={moreData.profiles.showButton}
         />
       </div>
       
@@ -74,4 +76,4 @@ const Cpo = () => {
   );
 };
 
-export default Cpo;
+export default More;
